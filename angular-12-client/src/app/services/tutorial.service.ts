@@ -1,10 +1,9 @@
-import http from "../http-common";
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Tutorial } from '../models/tutorial.model';
 
-
+const baseUrl = 'http://bezkoder-api:8082/api/tutorials';
 
 @Injectable({
   providedIn: 'root'
