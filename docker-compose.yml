@@ -24,7 +24,7 @@ services:
       - mysqldb
     container_name: nodejstutorial
     image: nodejstutorial:latest
-    imagePullPolicy: Always
+    pull_policy: Always
     restart: unless-stopped
     env_file: ./.env
     ports:
@@ -41,7 +41,7 @@ services:
     depends_on:
       - bezkoder-api
     image: angulartutorial:latest
-    imagePullPolicy: Always
+    pull_policy: Always
     restart: unless-stopped
     container_name: angulartutorial
     env_file: ./.env
